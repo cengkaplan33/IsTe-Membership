@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="83306515-1e76-4de1-9811-876644af107e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://mernisservis.isimtescil.net/CitizenService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CitizenService.xsd" MetadataType="Schema" ID="7f0d2ee5-f54e-4cb1-91cd-bb7aa59366db" SourceId="1" SourceUrl="http://mernisservis.isimtescil.net/CitizenService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CitizenService1.xsd" MetadataType="Schema" ID="d6f0bd9d-9f47-4117-96dc-3ca4016cc004" SourceId="1" SourceUrl="http://mernisservis.isimtescil.net/CitizenService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CitizenService2.xsd" MetadataType="Schema" ID="1fd4bee0-da19-4392-89ca-3968bd546501" SourceId="1" SourceUrl="http://mernisservis.isimtescil.net/CitizenService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CitizenService.wsdl" MetadataType="Wsdl" ID="8e079464-c83b-4bb2-b2bf-c7e7b19a02a1" SourceId="1" SourceUrl="http://mernisservis.isimtescil.net/CitizenService.svc?wsdl" />
+    <MetadataFile FileName="CitizenService.disco" MetadataType="Disco" ID="0477be37-1f94-47c7-83d8-b01cdcf1857e" SourceId="1" SourceUrl="http://mernisservis.isimtescil.net/CitizenService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

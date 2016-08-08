@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17A194D3-997B-4DE6-913D-4522B7900BE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Membership.Service</RootNamespace>
+    <AssemblyName>Membership.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.0.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation, Version=6.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.6.1.0.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountAddressService.cs" />
+    <Compile Include="Account\AccountContactService.cs" />
+    <Compile Include="Account\AccountRegistrationService.cs" />
+    <Compile Include="Account\AccountService.cs" />
+    <Compile Include="Account\IAccountAddressService.cs" />
+    <Compile Include="Account\IAccountContactService.cs" />
+    <Compile Include="Account\IAccountRegistrationService.cs" />
+    <Compile Include="Account\IAccountService.cs" />
+    <Compile Include="Api\ApiAccountService.cs" />
+    <Compile Include="Api\ApiAuthService.cs" />
+    <Compile Include="Api\ApiHelper.cs" />
+    <Compile Include="Api\IApiAccountService.cs" />
+    <Compile Include="Api\IApiAuthService.cs" />
+    <Compile Include="Application\ApplicationService.cs" />
+    <Compile Include="Application\IApplicationService.cs" />
+    <Compile Include="Cache\CacheService.cs" />
+    <Compile Include="Cache\ICacheService.cs" />
+    <Compile Include="Mapping\ServiceMappingProfile.cs" />
+    <Compile Include="Models\Account\AccountBlockRequest.cs" />
+    <Compile Include="Models\Account\AccountBlockResult.cs" />
+    <Compile Include="Models\Account\AccountRegistrationRequest.cs" />
+    <Compile Include="Models\Account\AccountRegistrationResult.cs" />
+    <Compile Include="Models\Account\ChangePasswordRequest.cs" />
+    <Compile Include="Models\Account\ChangePasswordResult.cs" />
+    <Compile Include="Models\Account\CheckEmailRequest.cs" />
+    <Compile Include="Models\Account\CheckEmailResult.cs" />
+    <Compile Include="Models\Account\RecoveryPasswordRequest.cs" />
+    <Compile Include="Models\Account\RecoveryPasswordResult.cs" />
+    <Compile Include="Models\Api\Request\AccountAddressRequestBase.cs" />
+    <Compile Include="Models\Api\Request\AccountContactRequestBase.cs" />
+    <Compile Include="Models\Api\Request\AccountRequest.cs" />
+    <Compile Include="Models\Api\Request\AccountRequestBase.cs" />
+    <Compile Include="Models\Api\Response\AccountAddressResponeBase.cs" />
+    <Compile Include="Models\Api\Response\AccountContactResponseBase.cs" />
+    <Compile Include="Models\Api\Response\AccountResponse.cs" />
+    <Compile Include="Models\Api\Response\AccountResponseBase.cs" />
+    <Compile Include="Models\Authentication\AuthenticationRequest.cs" />
+    <Compile Include="Models\Authentication\AuthenticationResult.cs" />
+    <Compile Include="Models\Authentication\LogoutRequest.cs" />
+    <Compile Include="Models\Authentication\LogoutResult.cs" />
+    <Compile Include="Models\ResponseBase.cs" />
+    <Compile Include="Models\Security\ApiKeyAuthenticationResult.cs" />
+    <Compile Include="Models\Security\TokenAuthenticationResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reseller\IResellerService.cs" />
+    <Compile Include="Reseller\ResellerService.cs" />
+    <Compile Include="Resources\ServiceResponse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceResponse.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ServiceResponseMessage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceResponseMessage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AuthenticationService.cs" />
+    <Compile Include="Security\EncryptionService.cs" />
+    <Compile Include="Security\IAuthenticationService.cs" />
+    <Compile Include="Security\IEncryptionService.cs" />
+    <Compile Include="Security\IPermissionService.cs" />
+    <Compile Include="Security\ITokenService.cs" />
+    <Compile Include="Security\TokenHelper.cs" />
+    <Compile Include="Security\TokenService.cs" />
+    <Compile Include="Session\IAccountSessionService.cs" />
+    <Compile Include="Validation\AccountAddressValidator.cs" />
+    <Compile Include="Validation\AccountBlockValidator.cs" />
+    <Compile Include="Validation\AccountValidator.cs" />
+    <Compile Include="Validation\AccountContactValidator.cs" />
+    <Compile Include="Validation\CheckEmailValidator.cs" />
+    <Compile Include="Validation\PasswordValidator.cs" />
+    <Compile Include="Validation\IValidationService.cs" />
+    <Compile Include="Validation\ValidationService .cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Membership.Core\Membership.Core.csproj">
+      <Project>{2B2D42B5-D7C9-41B9-8E38-481CA6473D01}</Project>
+      <Name>Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Membership.Data\Membership.Data.csproj">
+      <Project>{13006E28-6617-4D6C-8E33-C7EBF654C805}</Project>
+      <Name>Membership.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Customer\" />
+    <Folder Include="Directory\" />
+    <Folder Include="Employee\" />
+    <Folder Include="Group\" />
+    <Folder Include="Right\" />
+    <Folder Include="Role\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ServiceResponse.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServiceResponse.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ServiceResponseMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServiceResponseMessage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

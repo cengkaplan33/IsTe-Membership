@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCOUNT_ACTIVATED" xml:space="preserve">
+    <value>Hesap aktive edildi.</value>
+  </data>
+  <data name="ACCOUNT_BLOCKED" xml:space="preserve">
+    <value>Hesap bloklandı.</value>
+  </data>
+  <data name="ACCOUNT_DISABLE" xml:space="preserve">
+    <value>Hesap aktif değil</value>
+  </data>
+  <data name="ACCOUNT_EMAIL_NOT_FOUND" xml:space="preserve">
+    <value>Email adresi bulunamadı.</value>
+  </data>
+  <data name="API_ACCOUNT_BLOCKED" xml:space="preserve">
+    <value>Api hesabı bloklandı.</value>
+  </data>
+  <data name="API_ACCOUNT_DISABLED" xml:space="preserve">
+    <value>Api kullanıcı hesabı aktif değil.</value>
+  </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>Email adresi önceden kayıt edilmiş.</value>
+  </data>
+  <data name="EMAIL_IS_SUITABLE" xml:space="preserve">
+    <value>Email kayıt için uygun.</value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>Genel hata.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ACCOUNT_TYPE" xml:space="preserve">
+    <value>Geçersiz hesap AccountType alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_ADDRESS" xml:space="preserve">
+    <value>Geçersiz hesap adres alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_CITY_ID" xml:space="preserve">
+    <value>Geçersiz hesap adres şehir kodu alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_COUNTRY_ID" xml:space="preserve">
+    <value>Geçersiz hesap adres ülke kodu alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_CREATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap adresi yaratma isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_DELETE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap adresi silme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_DISTRICT_ID" xml:space="preserve">
+    <value>Geçersiz hesap adres semt kodu alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_QUERY_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap adresi sorgulama isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ADDRESS_UPDATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap adresi güncelleme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_ALTERNATIVE_EMAIL" xml:space="preserve">
+    <value>Geçersiz hesap alternatif email alanı.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_APPLICATION_ID" xml:space="preserve">
+    <value>Geçersiz hesap ApplicationId alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_BLOCK_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap durumu değiştirme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CODE" xml:space="preserve">
+    <value>Geçersiz kullanıcı kodu</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CONTACT_CONTACT_NAME" xml:space="preserve">
+    <value>Geçersiz hesap kontak kişi bilgisi</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CONTACT_CREATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap kontak bilgisi yaratma isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CONTACT_DELETE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap kontak bilgisi silme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CONTACT_QUERY_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap kontak bilgisi sorgulama isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CONTACT_UPDATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap kontak bilgisi güncelleme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_CREATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap yaratma isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_DELETE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap silme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_EMAIL" xml:space="preserve">
+    <value>Geçersiz hesap Email alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_GENDER" xml:space="preserve">
+    <value>Geçersiz hesap cinsiyet alanı.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_GSM" xml:space="preserve">
+    <value>Geçersiz hesap gsm alanı.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_IDENTITY_NUMBER" xml:space="preserve">
+    <value>Geçersiz hesap kimlik numarası alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_NAME" xml:space="preserve">
+    <value>Geçersiz hesap Name alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_PASSWORD" xml:space="preserve">
+    <value>Geçersiz hesap Password alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_QUERY_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap sorgulama isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_RISK_LEVEL" xml:space="preserve">
+    <value>Geçersiz hesap risk seviyesi alanı.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_STATUS" xml:space="preserve">
+    <value>Geçersiz hesap Status alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_SURNAME" xml:space="preserve">
+    <value>Geçersiz hesap Surname alanı</value>
+  </data>
+  <data name="INVALID_ACCOUNT_UNBLOCK_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap durumu değiştirme isteği.</value>
+  </data>
+  <data name="INVALID_ACCOUNT_UPDATE_REQUEST" xml:space="preserve">
+    <value>Geçersiz hesap güncelleme isteği.</value>
+  </data>
+  <data name="INVALID_ADDRESS_CODE" xml:space="preserve">
+    <value>Geçersiz adres kodu</value>
+  </data>
+  <data name="INVALID_API_KEY" xml:space="preserve">
+    <value>Geçersiz ApiKey.</value>
+  </data>
+  <data name="INVALID_AUTH_REQUEST" xml:space="preserve">
+    <value>Geçersiz kimlik doğrulama isteği.</value>
+  </data>
+  <data name="INVALID_CHECK_EMAIL_REQUEST" xml:space="preserve">
+    <value>Geçersiz email sorgulama isteği.</value>
+  </data>
+  <data name="INVALID_CONTACT_CODE" xml:space="preserve">
+    <value>Geçersiz kontak kodu</value>
+  </data>
+  <data name="INVALID_EMAIL" xml:space="preserve">
+    <value>Geçersiz email.</value>
+  </data>
+  <data name="INVALID_IP_ADDRESS" xml:space="preserve">
+    <value>Geçersiz ip adresinden istek geliyor.</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Geçersiz şifre</value>
+  </data>
+  <data name="INVALID_PASSWORD_CHANGE_REQUEST" xml:space="preserve">
+    <value>Geçersiz şifre değiştime isteği.</value>
+  </data>
+  <data name="INVALID_REQUEST_HEADER" xml:space="preserve">
+    <value>Geçersiz istek başlık bilgisi. Request Header içinde X-MEMBERSHIP-APIKEY ve SECRET-KEY parametrelerini kontrol ediniz.</value>
+  </data>
+  <data name="INVALID_REQUEST_HEADER_TOKEN" xml:space="preserve">
+    <value>Geçersiz istek başlık bilgisi. Request Header içinde TOKEN parametresini kontrol ediniz.</value>
+  </data>
+  <data name="INVALID_TOKEN" xml:space="preserve">
+    <value>Geçersiz token.</value>
+  </data>
+  <data name="OLD_AND_NEW_PASSWORD_MUST_BE_DIFFERENT" xml:space="preserve">
+    <value>Eski ve yeni şifre farklı olmalı.</value>
+  </data>
+  <data name="PASSWORD_CHANGED" xml:space="preserve">
+    <value>Şifre değiştirildi.</value>
+  </data>
+  <data name="PASSWORD_NOT_CHANGED" xml:space="preserve">
+    <value>Şifre değiştirilemedi.</value>
+  </data>
+  <data name="PASSWORD_NOT_MISMATCH" xml:space="preserve">
+    <value>Şifre bilgisi eşleşmiyor.</value>
+  </data>
+  <data name="RESOURCE_ALREADY_EXIST" xml:space="preserve">
+    <value>Aynı değere sahip kayıt var.</value>
+  </data>
+  <data name="RESOURCE_DELETED" xml:space="preserve">
+    <value>Kayıt silindi.</value>
+  </data>
+  <data name="RESOURCE_INSERTED" xml:space="preserve">
+    <value>Kayıt eklendi.</value>
+  </data>
+  <data name="RESOURCE_NOT_FOUND" xml:space="preserve">
+    <value>Kayıt bulunamadı.</value>
+  </data>
+  <data name="RESOURCE_UPDATED" xml:space="preserve">
+    <value>Kayıt güncellendi.</value>
+  </data>
+  <data name="TOO_MANY_REQUESTS" xml:space="preserve">
+    <value>Çok fazla sayıda istek geliyor.
+Rate Limit aşıldı.</value>
+  </data>
+  <data name="WRONG_ACCOUNT_PASSWORD" xml:space="preserve">
+    <value>Hatalı şifre.</value>
+  </data>
+</root>

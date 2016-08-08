@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13006E28-6617-4D6C-8E33-C7EBF654C805}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Membership.Data</RootNamespace>
+    <AssemblyName>Membership.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.1.603\lib\net45\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Redis\Account\AccountCacheRepository.cs" />
+    <Compile Include="Redis\Account\IAccountCacheRepository.cs" />
+    <Compile Include="Redis\CacheKeyName.cs" />
+    <Compile Include="Redis\Cache\ApplicationCacheRepository.cs" />
+    <Compile Include="Redis\Cache\IApplicationCacheRepository.cs" />
+    <Compile Include="Redis\IRedisRepository.cs" />
+    <Compile Include="Redis\RedisFactory.cs" />
+    <Compile Include="Redis\RedisRepository.cs" />
+    <Compile Include="Redis\RedisStore.cs" />
+    <Compile Include="Repositories\Account\AccountAddressRepository.cs" />
+    <Compile Include="Repositories\Account\AccountContactRepository.cs" />
+    <Compile Include="Repositories\Account\AccountIpRepository.cs" />
+    <Compile Include="Repositories\Account\AccountLoginRepository.cs" />
+    <Compile Include="Repositories\Account\AccountRepository.cs" />
+    <Compile Include="Repositories\Account\IAccountAddressRepository.cs" />
+    <Compile Include="Repositories\Account\IAccountContactRepository.cs" />
+    <Compile Include="Repositories\Account\IAccountIpRepository.cs" />
+    <Compile Include="Repositories\Account\IAccountLoginRepository.cs" />
+    <Compile Include="Repositories\Account\IAccountRepository.cs" />
+    <Compile Include="Repositories\Application\ApplicationRepository.cs" />
+    <Compile Include="Repositories\Application\IApplicationRepository.cs" />
+    <Compile Include="Repositories\DbFactory.cs" />
+    <Compile Include="Repositories\Directory\DirectoryRepository.cs" />
+    <Compile Include="Repositories\Directory\IDirectoryRepository.cs" />
+    <Compile Include="Repositories\Group\GroupRepository.cs" />
+    <Compile Include="Repositories\Group\IGroupRepository.cs" />
+    <Compile Include="Repositories\MembershipEntities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\Reseller\IResellerRepository.cs" />
+    <Compile Include="Repositories\Reseller\ResellerRepository.cs" />
+    <Compile Include="Repositories\Right\IRightRepository.cs" />
+    <Compile Include="Repositories\Right\RightRepository.cs" />
+    <Compile Include="Repositories\Role\IRoleRespository.cs" />
+    <Compile Include="Repositories\Role\RoleRepository.cs" />
+    <Compile Include="Repositories\Security\ISecurityRepository.cs" />
+    <Compile Include="Repositories\Security\SecurityRepository.cs" />
+    <Compile Include="Repositories\VertificationModel\IVertificationModelRepository.cs" />
+    <Compile Include="Repositories\VertificationModel\VertificationModelRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Membership.Core\Membership.Core.csproj">
+      <Project>{2B2D42B5-D7C9-41B9-8E38-481CA6473D01}</Project>
+      <Name>Membership.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
